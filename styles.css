@@ -166,10 +166,38 @@
 
 
   @media screen and (max-width: 375px) {
+
+    .header {
+        background-color: #e6f0ff;
+        height: 60%;
+        padding: 2em;
+        padding-top: 2em;
+      }
+
     .header-info {
         padding: 0;
         padding-bottom: 5vh;
         max-width:100%;
+        text-align: center;
+    }
+
+    .header .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    .section-info {
+        padding: 0;
+        padding-bottom: 5vh;
+        max-width: 100%;
+    }
+    
+    .section .flex {
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        padding-top: 3vh;
     }
   }
 
