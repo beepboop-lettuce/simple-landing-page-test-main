@@ -27,7 +27,7 @@
   
   
   h2 {
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 300;
     margin: 10px 0;
     line-height: 1.2;
@@ -38,7 +38,7 @@
   }
   
 
-  img {
+  .header-image {
     max-width: 10%;
   }
   
@@ -93,20 +93,74 @@
 
   .header-info {
     padding-left: 6em;
-    padding-bottom: 6em;
+    padding-bottom: 8em;
     max-width: 40%
 
   }
 
   .section {
     background-color: white;
-    height: 120vh;
+    height: 150vh;
+    padding: 0 5em;
+  }
+
+  .section .flex {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+  }
+
+  .section ul {
+    display: flex;
+  }
+  
+  .section a {
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .section-info { 
+    padding-bottom: 3em;
+    padding-top: 8em;
+    max-width: 40%
+
+  }
+
+  .section-image-right {
+    max-width: 100%;
+    align-items:flex-start;
+  }
+
+  .section-image-left {
+    max-width: 100%;
+    align-items: inherit;
   }
 
   .footer {
     background-color:
      rgb(80, 105, 248);
-    height: 30vh;
+    height: 30%;
+    color: white;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+
+  .footer-button {
+    background-color: rgb(243, 199, 53);
+    font-weight: bold;
+    border-radius: 25px;
+    height: 3.5em;
+    width: 12em;
+
   }
 
 
@@ -135,9 +189,25 @@
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 540px) {
     .header-info {
         padding: 0;
+        padding-bottom: 5vh;
+        max-width:100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-info {
+        padding: 3vh;
+        padding-bottom: 5vh;
+        max-width:100%;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .header-info {
+        padding: 3vh;
         padding-bottom: 5vh;
         max-width:100%;
     }
