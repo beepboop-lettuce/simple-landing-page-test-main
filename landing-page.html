@@ -17,7 +17,7 @@
 			<div class="container flex">
 				<img class="header-image" src="assets/logo-blue-160x160-1.png" alt="logo">
 				  <ul>
-					<li><button class="button"><a href="#">CONTACT US</a></button>
+					<li><button class="button" id="top-button" onclick="removeButton(event)">CONTACT US</button>
 					</li>
 				  </ul>
 				
@@ -57,15 +57,30 @@
 					</div>
 					<div class="footer-flex">
 						<ul>
-							<li><button class="footer-button"><a href="#">CONTACT US</a></button>
+							<li><button class="footer-button" id="bottom-button" onclick="removeButton(event)">CONTACT US</button>
 							</li>
 						  </ul>
 					</div>
 				</div>
 			</footer>
 
-			<script type="text/javascript">
-				// Event listener JS goes here
+			<script src="js/confetti.min.js"></script>
+			<script>
+				let confetti = new Confetti("top-button");
+				confetti.setCount(75);
+				confetti.setSize(1);
+				confetti.setPower(25);
+				confetti.setFade(false);
+				confetti.destroyTarget(false);
 			</script>
+			
+			  <script>
+				function removeButton(t) {
+				  (t.target.style.opacity = 0),
+					setTimeout(() => {
+					  (t.target.style.visibility = ""), (t.target.style.opacity = 1);
+					}, 1000);
+				}
+			  </script>
 	</body>
 </html>
