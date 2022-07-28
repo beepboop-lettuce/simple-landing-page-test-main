@@ -267,6 +267,18 @@
         padding-bottom: 5vh;
         max-width:100%;
     }
+
+    .section-info {
+      padding: 0;
+      padding-bottom: 5vh;
+      max-width: 100%;
+      text-align: center;
+  }
+
+    .section .flex {
+      flex-wrap: wrap-reverse;
+      padding-top: 3vh;
+    }
     
     .footer {
         text-align: center;
