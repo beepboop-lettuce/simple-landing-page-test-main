@@ -100,7 +100,7 @@
 
   .section {
     background-color: white;
-    height: 150vh;
+    height: 150%;
     padding: 0 5em;
   }
 
@@ -163,8 +163,6 @@
 
   }
 
-
-
   @media screen and (max-width: 375px) {
 
     .header {
@@ -187,6 +185,11 @@
         align-items: center;   
     }
 
+    .section {
+        height: 150%;
+        padding: 2em;
+      }
+
     .section-info {
         padding: 0;
         padding-bottom: 5vh;
@@ -195,9 +198,22 @@
     
     .section .flex {
         display: flex;
-        justify-content:flex-end;
+        justify-content:center;
         align-items: center;
         padding-top: 3vh;
+    }
+
+    .section-image-right {
+        max-width: 100%;
+        align-items:center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
     }
   }
 
@@ -207,6 +223,14 @@
         padding-bottom: 5vh;
         max-width:100%;
     }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
+    }
   }
 
   @media screen and (max-width: 412px) {
@@ -214,6 +238,14 @@
         padding: 0;
         padding-bottom: 5vh;
         max-width:100%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
     }
   }
 
@@ -223,6 +255,14 @@
         padding-bottom: 5vh;
         max-width:100%;
     }
+    
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -231,6 +271,14 @@
         padding-bottom: 5vh;
         max-width:100%;
     }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
+    }
   }
 
   @media screen and (max-width: 820px) {
@@ -238,5 +286,13 @@
         padding: 3vh;
         padding-bottom: 5vh;
         max-width:100%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-flex {
+        padding-bottom: 3em;
     }
   }
